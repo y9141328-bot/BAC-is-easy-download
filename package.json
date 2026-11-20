@@ -1,0 +1,25 @@
+{
+  "name": "bac-app",
+  "version": "1.0.0",
+  "description": "تطبيق الباكالوريا",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "dz.bac.companion",
+    "productName": "BAC is easy",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png"
+    }
+  },
+  "allowScripts": {
+    "electron@33.4.11": true
+  }
+}
